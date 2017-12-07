@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "208fb25a8bdae62a31253d13e7f802bf0c72043c06e4af84f1fd765991d84a63" %}
+{% set version = "1.5.3" %}
+{% set sha256 = "3d4c85ce8799dc8777f5667b85a9781cd891d846e5aeac7494be0237e3391f27" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,11 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.11.*
     - toolchain
   run:
     - python
-    - numpy x.x
+    - numpy >=1.11
     - scipy
     - astropy
     - extinction
