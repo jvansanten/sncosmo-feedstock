@@ -12,15 +12,20 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1001
+  skip: true  # [py>36]
+  script:
+    # If cython sources were included, we could just rerender them here to make
+    # the package work with 3.7.
+    # - cythonize sncosmo/*.pyx  # [py>36]
+    - pip install . --no-deps --ignore-installed --no-cache-dir
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
-    - setuptools
+    - pip
     - numpy
   run:
     - python
