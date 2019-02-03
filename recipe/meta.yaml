@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "d4eedd4b82328c06d2ae2f17c44245985ceeed9f3009092be76ed2d42e1c5466" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "b9440ae69d2810afe0c500922398dd46513af8e0cb1c33d08b3e933ee688ed12" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   skip: true  # [py>36]
   script:
     # If cython sources were included, we could just rerender them here to make
