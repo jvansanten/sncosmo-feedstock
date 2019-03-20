@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script:
     # If cython sources were included, we could just rerender them here to make
     # the package work with 3.7.
