@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "1.7.1" %}
-{% set sha256 = "0a0b46197fcd4bac779d39b62a418fe2443cae13c2cb82df4f06cc615764df32" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "93590c47ac5d5a4849b622d2fba8a867d31b8697363c19abe85d040b9e970ba0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script:
     # If cython sources were included, we could just rerender them here to make
     # the package work with 3.7.
