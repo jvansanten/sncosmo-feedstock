@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "1.8.1" %}
-{% set sha256 = "997123a2640b8b135e622441201fa03e2e8d79a335beada74585db7809780e35" %}
+{% set version = "1.8.2" %}
+{% set sha256 = "552e3d9ee67dae8cf00ef198de5940ee93b231bf50946b2d6589c4963aaf1766" %}
 
 package:
   name: {{ name|lower }}
