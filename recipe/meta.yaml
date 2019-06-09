@@ -13,11 +13,8 @@ source:
 
 build:
   number: 0
-  script:
-    # If cython sources were included, we could just rerender them here to make
-    # the package work with 3.7.
-    # - cythonize sncosmo/*.pyx  # [py>36]
-    - pip install . --no-deps --ignore-installed --no-cache-dir
+  script: pip install . --no-deps --ignore-installed --no-cache-dir
+  skip: true  # [py27]
 
 requirements:
   build:
@@ -26,6 +23,7 @@ requirements:
     - python
     - pip
     - numpy
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
