@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "1.8.2" %}
-{% set sha256 = "552e3d9ee67dae8cf00ef198de5940ee93b231bf50946b2d6589c4963aaf1766" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "19ff49f2a65123190fb02eaa1eb8c39ed189446ed6ad5ec67d54023e533c3992" %}
 
 package:
   name: {{ name|lower }}
@@ -13,11 +13,8 @@ source:
 
 build:
   number: 0
-  script:
-    # If cython sources were included, we could just rerender them here to make
-    # the package work with 3.7.
-    # - cythonize sncosmo/*.pyx  # [py>36]
-    - pip install . --no-deps --ignore-installed --no-cache-dir
+  script: pip install . --no-deps --ignore-installed --no-cache-dir
+  skip: true  # [py27]
 
 requirements:
   build:
@@ -26,6 +23,7 @@ requirements:
     - python
     - pip
     - numpy
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
