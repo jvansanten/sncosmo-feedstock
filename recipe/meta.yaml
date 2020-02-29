@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "19ff49f2a65123190fb02eaa1eb8c39ed189446ed6ad5ec67d54023e533c3992" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "5f9db64a551c3e70bcbf1a0164ff39018848ea0c338c9ffc33a3a52315b3a92f" %}
 
 package:
   name: {{ name|lower }}
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: 'Python library for supernova cosmology'
+  summary: Python library for supernova cosmology
   description: |
     SNCosmo synthesizes supernova spectra and photometry from SN models,
     and has functions for fitting and sampling SN model parameters given
