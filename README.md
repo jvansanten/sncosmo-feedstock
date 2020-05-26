@@ -206,6 +206,7 @@ Feedstock Maintainers
 =====================
 
 * [@benjaminrose](https://github.com/benjaminrose/)
+* [@jpierel14](https://github.com/jpierel14/)
 * [@kbarbary](https://github.com/kbarbary/)
 * [@mwcraig](https://github.com/mwcraig/)
 * [@rbiswas4](https://github.com/rbiswas4/)
