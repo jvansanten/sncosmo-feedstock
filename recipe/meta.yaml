@@ -1,6 +1,6 @@
 {% set name = "sncosmo" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "a119eaf13a195cceabb151ef6c26dabeaab9c16e2eb41b4619ecbb6a071e8a5f" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "cb4492745dffe7d0f5f8e70f88e36eaf453a047d0e2dc593e3117c1fd0093d11" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: pip install . --no-deps --ignore-installed --no-cache-dir
   skip: true  # [py27]
 
